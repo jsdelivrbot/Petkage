@@ -1,0 +1,54 @@
+.row {
+  margin-top: 5rem;
+  justify-content: center;
+}
+.card-img-left {
+  border-radius: 10px;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.hospital_info>thead {
+  font-size: 3.5rem;
+  color: #414141;
+}
+.hospital_info th {
+  padding: 1rem 0 2rem 0;
+}
+.hospital_info>tbody {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #414141;
+}
+.hospital_info td {
+  padding: 0 0 .5rem 0;
+}
+.hospital_info i {
+  font-size: 1.5rem;
+  padding: 0 1rem 0 0;
+}
+.btn-lg {
+  margin: 4rem;
+  width: 30%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+p {
+  padding: 2rem;
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  .hospital_info>thead {
+    font-size: 3rem;
+  }
+  .hospital_info>tbody {
+    font-size: 1rem;
+  }
+  .hospital_info i {
+    font-size: 1rem;
+  }
+  .btn-lg {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>우리병원관리 정보수정</title>
+
+    <style type="text/css">
+    	.box{
+    		background-color:LightGray;
+    		padding:20px;
+    	}
+        
+        body {
+            font-family:"Malgun Gothic";
+            font-size: 0.8em;
+
+        }
+        /*TAB CSS*/
+
+        ul.tabs {
+            margin: 0;
+            padding: 0;
+            float: left;
+            list-style: none;
+            height: 32px; /*--Set height of tabs--*/
+            border-bottom: 1px solid #999;
+            border-left: 1px solid #999;
+            width: 100%;
+        }
+        ul.tabs li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+            line-height: 31px; /*--Vertically aligns the text within the tab--*/
+            border: 1px solid #999;
+            border-left: none;
+            margin-bottom: -1px; /*--Pull the list item down 1px--*/
+            overflow: hidden;
+            position: relative;
+            background: #e0e0e0;
+        }
+        ul.tabs li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            font-size: 1.2em;
+            padding: 0 20px;
+            /*--Gives the bevel look with a 1px white border inside the list item--*/
+            border: 1px solid #fff; 
+            outline: none;
+        }
+        ul.tabs li a:hover {
+            background: #ccc;
+        }
+        html ul.tabs li.active, html ul.tabs li.active a:hover  {
+             /*--Makes sure that the active tab does not listen to the hover properties--*/
+            background: #fff;
+            /*--Makes the active tab look like it's connected with its content--*/
+            border-bottom: 1px solid #fff; 
+        }
+
+        /*Tab Conent CSS*/
+        .tab_container {
+            border: 1px solid #999;
+            border-top: none;
+            overflow: hidden;
+            clear: both;
+            float: left; 
+            width: 100%;
+            background: #fff;
+        }
+        .tab_content {
+            padding: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            //When page loads...
+            $(".tab_content").hide(); //Hide all content
+            $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+            $(".tab_content:first").show(); //Show first tab content
+
+            //On Click Event
+            $("ul.tabs li").click(function() {
+
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+                $(".tab_content").hide(); //Hide all tab content
+
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                $(activeTab).fadeIn(); //Fade in the active ID content
+                return false;
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<div id="wrapper">    
+    <!--탭 메뉴 영역 -->
+    <ul class="tabs">
+        <li><a href="#tab1">기본정보</a></li>
+        <li><a href="#tab2">직원정보</a></li>
+    </ul>
+
+    <!--탭 콘텐츠 영역 -->
+    <div class="tab_container">
+
+        <div id="tab1" class="tab_content">
+            <!--Content-->
+            <div class="hos_info_1">
+      <img src="https://www.ochbuffalo.org/sites/default/files/inline-images/KH-15733-OSHEI-SIGN-RENDERING_cmyk.jpg" alt="병원대표사진">
+      <table class="table">
+	    <thead class="thead-light">
+          <tr>
+            <th>병원명</th> <td><input type="text"></input></td>
+          </tr>
+          <tr>
+            <th>대표자명</th> <td><input type="text"></input></td>
+          </tr>
+          <tr>
+            <th>업체 전화번호</th> <td><input type="text"></input></td>
+          </tr>
+          <tr>
+            <th>대표자 휴대전화</th> <td><input type="text"></input></td>
+          </tr>
+          <tr>
+            <th>대표자 이메일</th> <td><input type="text"></input></td>
+          </tr>
+          <tr>
+            <th>병원 주소</th> <td><input type="text"></input></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="hos_info_2">
+
+      <table class="table">
+	    <thead class="thead-light">      
+	        <tr>
+	          <th>운영시간</th>
+	        </tr>
+	        <tr>
+	          <td><input type="text" value="300자 제한"></input></td>
+	        </tr>
+	        <tr>
+	        	<th>예약시간</th>
+	        </tr>
+	      </thead>
+       </table>
+       <table class="table">
+	     <thead class="thead-light">
+        <tr>
+        	<td>예약 시작 시간</td><td></td><td>예약 종료 시간</td>
+        </tr>
+        <tr>
+        	<td>
+        		<select>
+ 					<option value="amseven">07</option>
+        			<option value="ameight">08</option>
+ 					<option value="amnine">09</option>
+  					<option value="amten">10</option>
+ 					<option value="ameleven">11</option>
+ 					<option value="pmtwelve">12</option>
+ 					<option value="pmone">13</option>
+				</select>
+				<select>
+					<option value="szero">0</option>
+					<option value="shalf">30</option>
+				</select> 					
+        	</td>
+        	<td>-&nbsp;&nbsp;&nbsp;</td>
+        	<td>
+        		<select>
+ 					<option value="pmtwo">14</option>
+        			<option value="pmthree">15</option>
+ 					<option value="pmfour">16</option>
+  					<option value="pmfive">17</option>
+ 					<option value="pmsix">18</option>
+ 					<option value="pmseven">19</option>
+        			<option value="pmeight">20</option>
+ 					<option value="pmnine">21</option>
+  					<option value="pmten">22</option>
+ 					<option value="pmeleven">23</option>
+  					<option value="amtwelve">24</option>
+  				</select>
+  				<select>
+  					<option value="szero">0</option>
+					<option value="shalf">30</option>
+  				</select>
+ 			</td>
+        </tr>
+        </thead>
+       </table>
+       <table class="table">
+	     <thead class="thead-light">       
+	        <tr>
+	          <th>소개글</th>
+	        </tr>
+	        <tr>
+	          <td><input type="text" value="300자 제한"></input></td>
+	        </tr>
+	     </thead>
+      </table>
+    </div>
+    <div class="bottom_button">
+      <button class="btn btn-outline-secondary" type="button">확인</button>
+      <button class="btn btn-outline-secondary" type="button">취소</button>
+    </div>
+
+        </div>
+
+        <div id="tab2" class="tab_content">
+           <!--Content-->
+           <div class="box">
+	 <table>
+	 	<tr>
+	 		<td>직원명</td>
+	 		<td><input type="text"></input></td>
+	 		<td rowspan=2>
+				<button class="btn btn-outline-secondary" type="button">직원추가</button>
+			</td>
+	 	</tr>
+	 	<tr>
+	 		<td>담당업무</td>
+	 		<td><input type="text"></input></td>
+	 	</tr>
+	 </table>
+	</div>
+<br>
+ <button class="btn btn-outline-secondary" type="button">삭제</button>
+	 <table class="table">
+		<thead class="thead-light">
+	 	<tr>
+	 		<th><input type="checkbox"></input></th>
+	 		<th>직원번호</th>
+	 		<th>직원명</th>
+	 		<th>담당업무</th>
+	 		<th></th>
+	 	</tr>
+	 	<tr>
+	 		<td><input type="checkbox"></input></td>
+	 		<td>1</td>
+	 		<td>홍길동</td>
+	 		<td>수의사</td>
+	 		<td>
+	 			<button class="btn btn-outline-secondary" type="button">수정</button>
+			</td>
+	 	</tr>
+	 	<tr>
+	 	</tr>
+	  </thead>
+	 </table>
+        </div>
+
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

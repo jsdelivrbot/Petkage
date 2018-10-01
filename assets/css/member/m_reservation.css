@@ -1,0 +1,43 @@
+.form-row {
+justify-content: center;
+}
+.fa-calendar-alt {
+font-size: 2rem;
+margin-left: .5rem;
+margin-top: .2rem;
+color: #888;
+}
+
+.datepicker {
+padding: 1rem;
+font-size: 1.3rem;
+}
+.datepicker table {
+margin: .5rem;
+}
+.datepicker td,
+.datepicker th {
+width: 2.5rem;
+height: 2.5rem;
+}
+.table {
+text-align: center;
+}
+label {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#select-pet {
+    margin-top: .6rem;
+    height: 2.5rem;
+}
+#select-day {
+    height: 2.5rem;
+}
+
+@media (max-width: 760px) {
+  .time-table {
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="관리자 [일반회원관리]" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/side_menu.css">
+
+  <title>일반회원관리 - 메인페이지</title>
+</head>
+<body>
+  <section = class="content">
+    <!-- 헤더 -->
+    <header>
+        <h1>일반회원관리</h1>
+        <hr>
+    </header>
+    <!-- 일반회원 테이블 검색 옵션 -->
+    <div class="admin_hos_search_option">
+      <form class="" action="index.html" method="post">
+        <select>
+          <option value="all">전체</option>
+          <option value="mname">고객명</option>
+          <option value="mnum">전화번호</option>
+        </select>
+        <input type="search" name="hos_search" placeholder="검색어를 입력하세요" value="">
+      </form>
+    </div>
+    <!-- 병원회원관리 테이블 -->
+    <div class="admin_mem_table" >
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>고객명</th>
+          <th>아이디</th>
+          <th>반려동물 수</th>
+          <th>휴대전화</th>
+          <th>고객등록날짜</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>최고객</td>
+          <td>choi123</td>
+          <td>2</td>
+          <td>010-1234-5678</td>
+          <td>2018-01-01</td>
+        </tr>
+      </tbody>
+
+      <!-- 테이블 페이징 -->
+    </div>
+  </section>
+</body>
+</html>

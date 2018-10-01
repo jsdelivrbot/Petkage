@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>예약리스트</title>
+  <style media="screen">
+  </style>
+</head>
+<body>
+  <header>
+    <h1>예약 변경</h1>
+    <hr></hr>
+  </header>
+	<table class="table">
+	  <thead class="thead-light">
+	    <tr>
+	    	<th>날짜</th>
+	    	<td>
+	    		<select>
+		        	<option value="2000y">2000</option>
+		        	<option value="2001y">2001</option>
+			       	<option value="2002y">2002</option>
+			       	<option value="2003y">2003</option>
+		        	<option value="2004y">2004</option>
+		        	<option value="2005y">2005</option>
+		        	<option value="2006y">2006</option>
+		        	<option value="2007y">2007</option>
+		        	<option value="2008y">2008</option>
+		        	<option value="2009y">2009</option>
+		        	<option value="2010y">2010</option>
+		        	<option value="2011y">2011</option>
+		        	<option value="2012y">2012</option>
+		        	<option value="2013y">2013</option>
+		        	<option value="2014y">2014</option>
+		        	<option value="2015y">2015</option>
+		        	<option value="2016y">2016</option>
+		        	<option value="2017y">2017</option>
+		        	<option value="2018y" selected>2018</option>
+        		</select>&nbsp;년&nbsp;
+	    		
+	    		<select>
+		        	<option value="01m">01</option>
+		        	<option value="02m">02</option>
+		        	<option value="03m">03</option>
+		        	<option value="04m">04</option>
+		        	<option value="05m">05</option>
+		        	<option value="06m">06</option>
+		        	<option value="07m">07</option>
+		        	<option value="08m">08</option>
+		        	<option value="09m">09</option>
+		        	<option value="10m">10</option>
+		        	<option value="11m">11</option>
+		        	<option value="12m">12</option>
+	        	</select>&nbsp;월&nbsp;
+	    		
+	    		<select>
+		    		<option value="01d">01</option>
+		        	<option value="02d">02</option>
+		        	<option value="03d">03</option>
+		        	<option value="04d">04</option>
+		        	<option value="05d">05</option>
+		        	<option value="06d">06</option>
+		        	<option value="07d">07</option>
+		        	<option value="08d">08</option>
+		        	<option value="09d">09</option>
+		        	<option value="10d">10</option>
+		        	<option value="11d">11</option>
+		        	<option value="12d">12</option>
+		        	<option value="13d">13</option>
+		        	<option value="14d">14</option>
+		        	<option value="15d">15</option>
+		        	<option value="16d">16</option>
+		        	<option value="17d">17</option>
+		        	<option value="18d">18</option>
+		        	<option value="19d">19</option>
+		        	<option value="20d">20</option>
+		        	<option value="21d">21</option>
+		        	<option value="22d">22</option>
+		        	<option value="23d">23</option>
+		        	<option value="24d">24</option>
+		        	<option value="25d">25</option>
+		        	<option value="26d">26</option>
+		        	<option value="27d">27</option>
+		        	<option value="28d">28</option>
+		        	<option value="29d">29</option>
+		        	<option value="30d">30</option>
+		        	<option value="31d">31</option>
+	        	</select>&nbsp;일
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<th>담당 수의사</th>
+	    	<td>
+	    		<select>
+	    			<option value="doc1">이진영 수의사</option>
+	    			<option value="doc2">유니 수의사</option>
+	    			<option value="doc3">이엘리 수의사</option>
+	    		</select>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<th>시간</th>
+	    	<td>
+	    		<button class="btn btn-outline-secondary" type="button">전체 선택</button><br>
+	    		<input type="checkbox" value="amnine"></input>09:00
+	    		<input type="checkbox" value="amnineh"></input>09:30
+	    		<input type="checkbox" value="amten"></input>10:00
+	    		<input type="checkbox" value="amtenh"></input>10:30<br>
+	    		<input type="checkbox" value="ameleven"></input>11:00
+	    		<input type="checkbox" value="amelevenh"></input>11:30
+	    		<input type="checkbox" value="amtwelve"></input>12:00
+	    		<input type="checkbox" value="amtwelveh"></input>12:30<br>
+	    		<input type="checkbox" value="pmone"></input>13:00
+	    		<input type="checkbox" value="pmoneh"></input>13:30
+	    		<input type="checkbox" value="pmtwo"></input>14:00
+	    		<input type="checkbox" value="pmtwoh"></input>14:30<br>
+	    		<input type="checkbox" value="pmthree"></input>15:00
+	    		<input type="checkbox" value="pmthreeh"></input>15:30
+	    		<input type="checkbox" value="pmfour"></input>16:00
+	    		<input type="checkbox" value="pmfourh"></input>16:30<br>
+	    		<input type="checkbox" value="pmfive"></input>17:00
+	    		<input type="checkbox" value="pmfiveh"></input>17:30
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<th>고객명</th>
+	    	<td>
+	    		<input type="text"></input>
+	    		<button class="btn btn-outline-secondary" type="button">검색</button>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<th>휴대전화</th>
+	    	<td>
+	    		<input type="text"></input>&nbsp;-&nbsp;
+	    		<input type="text"></input>&nbsp;-&nbsp;
+	    		<input type="text"></input>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<th>반려동물명</th>
+	    	<td>
+	    		<select>
+	    			<option values="pet1" selected>후추</option>
+	    			<option values="pet2">모모</option>
+	    			<option values="pet3">유하</option>
+	    			<option values="pet4">민식</option>
+	    			<option values="pet5">두준</option>
+	    		</select>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<th>특이사항</th>
+	    	<td><textarea values="300자 제한"></textarea></td>
+	    </tr>
+	</table>
+	<br>
+	<button class="btn btn-outline-secondary" type="button">확인</button>
+	<button class="btn btn-outline-secondary" type="button">취소</button>
+</body>
+</html>

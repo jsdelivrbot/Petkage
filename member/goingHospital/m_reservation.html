@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="/assets/css/member/m_reservation.css">
+    <title>병원가기-예약신청하기</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1 class="top_header">예약 신청하기</h1>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-sm-12 col-lg-6">
+                    <label for="select-pet">1. 반려동물 선택</label>
+                    <select class="form-control" id="select-pet">
+                        <option value="1">후추</option>
+                        <option value="2">먼지</option>
+                        <option value="3">여러 마리(특이사항 기재 필수)</option>
+                    </select>
+                </div>
+                <div class="input-group col-sm-12 col-lg-6">
+                    <label for="select-day">2. 예약날짜 선택</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control" id="select-day" placeholder="예약하실 날짜를 선택해주세요"><span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+
+                <div class="time-table col-sm-12 col-lg-12">
+                    <label for="select-time">3. 예약시간 선택</label>
+                    <table class="table" id="select-time">
+                        <tr>
+                            <td>10:00</td>
+                            <td>10:30</td>
+                            <td>11:00</td>
+                            <td>11:30</td>
+                            <td>12:00</td>
+                            <td>12:30</td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>13:30</td>
+                            <td>14:00</td>
+                            <td>14:30</td>
+                            <td>15:00</td>
+                            <td>15:30</td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td>16:30</td>
+                            <td>17:00</td>
+                            <td>17:30</td>
+                            <td>18:00</td>
+                            <td>18:30</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group col-sm-12 col-lg-12">
+                    <label for="detail">4. 특이사항</label>
+                    <textarea class="form-control" id="detail" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-basic" data-toggle="modal" data-target="#reservation-modal">예약하기</button>
+            </div>
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="reservation-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">예약 내역 확인</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="hospital_info">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">시민동물병원</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-phone"></i></td>
+                                    <td>02-234-2412</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i></td>
+                                    <td>서울특별 광진구 자양로 13길</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-clock"></i></td>
+                                    <td>2018/10/10 10:00</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-paw"></i></td>
+                                    <td>먼지</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-clipboard-list"></i></td>
+                                    <td>겁이 많아요</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        <button type="submit" class="btn btn-basic">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.kr.min.js"></script>
+
+    <script type='text/javascript'>
+        $(function() {
+            $('.input-group.date').datepicker({
+                calendarWeeks: false,
+                todayHighlight: true,
+                autoclose: true,
+                format: "yyyy/mm/dd",
+                language: "kr"
+            });
+        });
+    </script>
+    <script>
+        $('td').click(function() {
+            if ($('td').hasClass('btn-active')) {
+                $('td').removeClass('btn-active').end();
+                $(this).addClass('btn-active');
+            } else {
+                $(this).addClass('btn-active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

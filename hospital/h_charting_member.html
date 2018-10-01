@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>진료하기</title>
+  <style media="screen">
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>진료하기</h1>
+    <div class="chart_prog">
+      <div class="card-deck mb-5 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">고객 선택</h4>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+
+        <!-- <i class="fal fa-angle-right"></i> -->
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">반려동물 선택</h4>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+
+        <!-- <i class="fal fa-angle-right"></i> -->
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">진료하기</h4>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+
+        <!-- <i class="fal fa-angle-right"></i> -->
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">진료정보 확인</h4>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+
+        <!-- <i class="fal fa-angle-right"></i> -->
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">진료 완료</h4>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section>
+      <h2>1. 고객 선택</h2>
+      <h6>진료하실 고객을 검색하세요</h6>
+
+      <!-- 고객 검색 -->
+      <div class="input-group">
+        <select class="custom-select">
+          <option selected>전체</option>
+          <option value="1">고객명</option>
+          <option value="2">휴대전화</option>
+        </select>
+        <!-- <input type="text" class="form-control"> -->
+        <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
+        </div>
+      </div>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">고객명</th>
+            <th scope="col">반려동물 수</th>
+            <th scope="col">휴대전화</th>
+            <th scope="col">최근진료날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>홍길동</td>
+            <td>2마리</td>
+            <td>010-1234-1234</td>
+            <td>없음</td>
+          </tr>
+          <tr>
+            <td>고길동</td>
+            <td>1마리</td>
+            <td>010-1234-4567</td>
+            <td>2018-04-04</td>
+          </tr>
+          <tr>
+            <td>김둘리</td>
+            <td>1마리</td>
+            <td>010-4567-1234</td>
+            <td>2018-06-06</td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+  </section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+</body>
+</html>

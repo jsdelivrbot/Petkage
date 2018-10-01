@@ -1,0 +1,111 @@
+#carouselMain {
+  width: 100%;
+  max-height: 32rem;
+  position: relative;
+}
+
+#carouselMain>.carousel-inner{
+  max-height: 32rem;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  max-height: 200px;
+}
+
+.container>table {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  vertical-align: text-top;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  table-layout: fixed;
+  color: white;
+  /* font-family: 'Nanum Gothic'; */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container>table td:hover {
+  background-color: #004071;
+  color: white;
+  cursor: pointer;
+}
+
+.res_container {
+  display: none;
+}
+
+@media (max-width:992px) {
+    .container>table {
+      font-size: 1.2rem;
+    }
+}
+
+@media (max-width:767px) {
+  #carouselMain{
+    display: none;
+  }
+  .res_container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border: 10px solid black; */
+  }
+  .res_container{
+    display: block;
+    position: relative;
+  }
+  .res_container > table {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    vertical-align: text-top;
+    /* position: absolute; */
+    table-layout: fixed;
+    /* font-family: 'Nanum Gothic'; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .res_container>table tr{
+    box-shadow:200px 200px 100px 1px rgba(0,0,0,0.5) inset;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .res_container>table tr:first-child{
+    background-image: url('https://www.cvpcomarketing.com/windinghill/wp-content/uploads/sites/14/2015/07/newclientsbnr_windinghill.jpg');
+  }
+
+  .res_container>table tr:nth-child(2){
+    background-image: url('https://www.budgetpetproducts.com.au/new/blog/wp-content/uploads/2014/06/boarding-banner-1024x355.jpg');
+  }
+
+  .res_container>table tr:nth-child(3){
+    background-image: url('https://www.freewordpressheaders.com/wp-content/gallery/dogs-puppies/cute-cavalier-king-charles-spaniel-puppy-header.jpg');
+  }
+
+  .res_container>table tr:nth-child(4){
+    background-image: url('https://www.freewordpressheaders.com/wp-content/gallery/dogs-puppies/siberian-samoyed-dog-and-puppy-website-header.jpg');
+  }
+
+  .res_container>table tr:nth-child(5){
+    background-image: url('https://www.freewordpressheaders.com/wp-content/gallery/cats-kittens/lovely-sleeping-kitten-blog-header.jpg');
+  }
+
+  .res_container>table tr td:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding: 50px 200px; */
+    /* color: red; */
+    transition: all 0.5s;
+  }
+
+
+
+}

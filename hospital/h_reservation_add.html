@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <title>예약리스트</title>
+</head>
+<body>
+  <header>
+    <h1>예약리스트</h1>
+  </header>
+  <section>
+    <!-- 예약 검색 조건 -->
+    <div class="input-group">
+      <select class="custom-select">
+        <option selected>전체</option>
+        <option value="1">고객명</option>
+        <option value="2">휴대전화</option>
+        <option value="3">상태</option>
+      </select>
+      <input type="text" class="form-control">
+    </div>
+
+    <!-- 기간 검색 -->
+    <input type="text" class="form-control">
+    <input type="text" class="form-control">
+
+
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">고객명</th>
+          <th scope="col">반려동물명</th>
+          <th scope="col">휴대전화</th>
+          <th scope="col">예약일시</th>
+          <th scope="col">
+            <select class="custom-select">
+              <option selected>예약상태</option>
+              <option value="1">이용예정</option>
+              <option value="2">이용완료</option>
+              <option value="3">예약취소</option>
+            </select>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td>
+          <td>초코</td>
+          <td>010-1234-1234</td>
+          <td>2018-08-06 15:00</td>
+          <td>이용예정</td>
+        </tr>
+        <tr>
+          <td>고길동</td>
+          <td>나비</td>
+          <td>010-1234-4567</td>
+          <td>2018-04-04 17:00</td>
+          <td>이용완료</td>
+        </tr>
+        <tr>
+          <td>김둘리</td>
+          <td>먼지</td>
+          <td>010-4567-1234</td>
+          <td>2018-06-06 10:30</td>
+          <td>예약취소</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+
+
+  </script>
+</body>
+</html>

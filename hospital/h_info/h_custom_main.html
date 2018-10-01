@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>고객관리</title>
+  <style media="screen">
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>고객관리</h1>
+    <hr></hr>
+  </header>
+
+
+  <section>
+      <!-- 고객 검색 -->
+      <div class="input-group">
+        <select class="custom-select">
+          <option selected>전체</option>
+          <option value="1">고객명</option>
+          <option value="2">휴대전화</option>
+        </select>
+        <!-- <input type="text" class="form-control"> -->
+        <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
+        </div>
+      </div>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">번호</th>
+            <th scope="col">고객명</th>
+            <th scope="col">아이디</th>
+            <th scope="col">반려동물 수</th>
+            <th scope="col">휴대전화</th>
+            <th scope="col">고객등록날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>박모모</td>
+            <td>momojjang</td>
+            <td>4마리</td>
+            <td>010-5577-7755</td>
+            <td>2018-08-17</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>한이사</td>
+            <td>han9949</td>
+            <td>1마리</td>
+            <td>010-9999-9651</td>
+            <td>2018-05-12</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>김미정</td>
+            <td>mijung1645</td>
+            <td>1마리</td>
+            <td>010-1245-1762</td>
+            <td>2018-03-22</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>윤미래</td>
+            <td>mirae95</td>
+            <td>2마리</td>
+            <td>010-9681-9872</td>
+            <td>2017-08-13</td>
+          </tr>          <tr>
+            <td>1</td>
+            <td>김정미</td>
+            <td>jungmi7134</td>
+            <td>3마리</td>
+            <td>010-6712-8892</td>
+            <td>2017-03-03</td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+  </section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="관리자 메인 [병원-병원정보관리]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/hospital_content.css">
+
+
+
+    <title>관리자-메인, 병원회원관리</title>
+
+  </head>
+  <body>
+
+    <section = class="content">
+      <!-- 헤더 -->
+      <header class="page_title">
+          <h1 class="page_title">병원회원관리</h1>
+      </header>
+      <!-- 병원회원 테이블 검색 옵션 -->
+      <div class="admin_hos_search_option">
+        <form class="" action="index.html" method="post">
+          <select>
+            <option value="all">전체</option>
+            <option value="hname">병원명</option>
+            <option value="hrname">대표자명</option>
+            <option value="hid">아이디</option>
+            <option value="haddr">주소</option>
+          </select>
+          <input type="search" name="hos_search" placeholder="검색어를 입력하세요" value="">
+          <input type="checkbox" id="search_checkbox1" name="allowed" value="">
+          <label for="search_checkbox1">승인</label>
+          <input type="checkbox" id="search_checkbox2" name="allowed" value="">
+          <label for="search_checkbox2">미승인</label>
+        </form>
+      </div>
+      <!-- 병원회원관리 테이블 -->
+      <div class="admin_hos_table" >
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>병원명</th>
+              <th>아이디</th>
+              <th>대표자명</th>
+              <th>전화번호</th>
+              <th>주소</th>
+              <th>승인상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>시민동물병원</td>
+              <td>petkage12</td>
+              <td>홍길동</td>
+              <td>02-123-4567</td>
+              <td>서울시 성동구 행당동 살곶이길</td>
+              <td>승인</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>기린동물병원</td>
+              <td>kirin34</td>
+              <td>김영희</td>
+              <td>02-456-7890</td>
+              <td>서울시 성동구 행당동 살곶이길</td>
+              <td>미승인</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <!-- 테이블 페이징 -->
+      </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

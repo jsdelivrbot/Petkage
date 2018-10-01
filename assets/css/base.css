@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800'); */
+/* @import url('https://fonts.googleapis.com/css?family=Jua'); */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+/*
+진한 회색: #414141
+연한 회색: #bfbebe
+남색: #004071
+하늘색: #e5edf8
+ */
+
+
+html, body, div,
+h1, h2, h3, h4, h5, h6,
+p, table, tr, td,
+button,
+input,
+optgroup,
+select, small {
+  font-family: 'NanumSquareRound', sans-serif;
+}
+.container-fluid {
+  max-width: 60rem;
+
+}
+
+.top_header {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5%;
+  border-bottom: 1px solid black;
+  font-family: 'NanumSquareRound';
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn-basic {
+  background-color: #004071;
+  color: white;
+}
+
+.btn-basic:hover {
+  background-color: #e5edf8;
+  color: black;
+}
+
+.btn-not-active {
+  background-color: #e5edf8;
+  color: black;
+}
+
+.btn-active {
+  background-color: #004071;
+  color: white;
+}
+
+
+@media (max-width: 760px) {
+  .top_header {
+    font-size: 1.5rem;
+  }
+}
